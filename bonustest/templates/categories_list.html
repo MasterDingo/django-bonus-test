@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Products categories" %}{% endblock %}
+
+{% block content %}
+  <a class="navigation" href="{% url "products_list" %}">{% trans "All products" %}</a>
+  <ul class="list">
+  {% for category in categories_list %}
+    <li><a href="{% url "category" category.pk %}">{{ category.name }}</a></li>
+  {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ product.name }}{% endblock %}
+
+{% block content %}
+  <a class="navigation" href="{% url "categories_list" %}">{% trans "All categories" %}</a>
+  <h4><a href="{% url "category" product.category.pk %}">{{ product.category.name }}</a></h4>
+  <h3>{{ product.name }}</h3>
+  <ul>
+    <li>{% trans "Product name" %}: {{ product.name }}</li>
+    <li>{% trans "Price" %}: {{ product.price|floatformat:2 }}</li>
+    <li>{% trans "Description" %}:<br>{{ product.description }}</li>
+  </ul>
+{% endblock %}

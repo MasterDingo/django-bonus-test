@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.userbar {
+  position: fixed;
+  height: 3em;
+  line-height: 3em;
+  top: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #888;
+  padding: 0 10px 0 10px;
+  text-align: right;
+}
+
+.userbar a {
+  padding: 5px;
+  background-color: #33d;
+  border-radius: 5px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.content {
+  margin-top: 3em;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+a.navigation {
+  display: block;
+  text-align: center;
+}
+
+.list {
+  margin: 0 auto;
+  margin-top: 1em;
+  min-width: 50%;
+}
+
+ul.list {
+  width: auto;
+}
+
+ul.list >li {
+  width: auto;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.list a {
+  text-decoration: none;
+  border-bottom: 1px dotted blue;
+}
+
+.list tbody tr:nth-child(odd),
+.list li:nth-child(odd) {
+  background-color: #ccc;
+}
+
+.list tbody td,
+.list li {
+  padding: 0 1em;
+}
+
+.list tbody td:nth-child(2) {
+  text-align: right;
+}
+
+.login-form {
+  text-align: center
+}
+
+.login-form input {
+  text-align: left;
+  border: 1px solid black;
+}
+
+.login-form .form-table {
+  margin: 0 auto;
+}
+
+.login-form .form-table td {
+  text-align: left;
+}
+
+.login-form .form-table th {
+  text-align: right;
+}
